@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a1a12b66-c692-410e-95da-7f6d804e4c35}</ProjectGuid>
+    <RootNamespace>MineSweeper</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\AdvBoard.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\AdvSqaureRules.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\AdvSquareBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Board.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Game.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\GameEngineer.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Generate.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\MediumBoard.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\MediumSquareBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\MediumSquareRules.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Minesweeper.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\PlannedGeneration.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\RandomGeneration.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Rules.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SimpleBoard.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SimpleSquareBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SimpleSquareRules.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SquareBoard.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SquareRules.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SquareTile.cpp" />
+    <ClCompile Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Tile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\AdvSquareRules.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Board.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Game.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\GameBuilder.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Generate.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\MediumSquareRules.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\phase1.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\PlannedGeneration.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\RandomGeneration.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Rules.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SimpleSquareRules.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SquareBoard.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SquareRules.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\SquareTile.h" />
+    <ClInclude Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Tile.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\Downloads\Minesweeper-Game-master-Copy\Minesweeper-Game-master - Copy\Minesweeper-Game-master\Minesweeper_game.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
